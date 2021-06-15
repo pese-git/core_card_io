@@ -1,20 +1,26 @@
 name: core_card_io
 description: CardIO plugin for flutter.
-version: 1.0.0
-author: Harry Bui <harrybui2804@gmail.com>
-homepage: https://github.com/harrybui2804
-repository: https://github.com/harrybui2804/core_card_io.git
+version: 2.0.0
+author: Harry Bui <harrybui2804@gmail.com>, Nikita Kozlov <nick@nk2.eu>
+homepage: https://github.com/nk2ishere/core_card_io.git
+repository: https://github.com/nk2ishere/core_card_io.git
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.20.0 <2.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  dataclass_beta: ^1.0.1
+  json_annotation: ^4.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  build_runner: ^2.0.3
+  json_serializable: ^4.1.2
+  dataclass_beta_generator: ^1.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

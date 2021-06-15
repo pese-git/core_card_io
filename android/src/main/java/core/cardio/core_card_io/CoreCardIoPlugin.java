@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.util.Log;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -40,7 +42,7 @@ public class CoreCardIoPlugin implements MethodCallHandler, ActivityResultListen
     }
 
     @Override
-    public void onMethodCall(MethodCall call, Result result) {
+    public void onMethodCall(@NotNull MethodCall call, @NotNull Result result) {
         if (pendingResult != null) {
             result.error("ALREADY_ACTIVE", "Scan card is already active", null);
             return;
@@ -59,67 +61,67 @@ public class CoreCardIoPlugin implements MethodCallHandler, ActivityResultListen
             Intent scanIntent = new Intent(activity, CardIOActivity.class);
 
             boolean requireExpiry = false;
-            if (methodCall.hasArgument("requireExpiry")) {
+            if (methodCall.hasArgument("requireExpiry") && methodCall.argument("requireExpiry") != null) {
                 requireExpiry = methodCall.argument("requireExpiry");
             }
 
             boolean requireCVV = false;
-            if (methodCall.hasArgument("requireCVV")) {
+            if (methodCall.hasArgument("requireCVV") && methodCall.argument("requireCVV") != null) {
                 requireCVV = methodCall.argument("requireCVV");
             }
 
             boolean requirePostalCode = false;
-            if (methodCall.hasArgument("requirePostalCode")) {
+            if (methodCall.hasArgument("requirePostalCode") && methodCall.argument("requirePostalCode") != null) {
                 requirePostalCode = methodCall.argument("requirePostalCode");
             }
 
             boolean requireCardHolderName = false;
-            if (methodCall.hasArgument("requireCardHolderName")) {
+            if (methodCall.hasArgument("requireCardHolderName") && methodCall.argument("requireCardHolderName") != null) {
                 requireCardHolderName = methodCall.argument("requireCardHolderName");
             }
 
             boolean restrictPostalCodeToNumericOnly = false;
-            if (methodCall.hasArgument("restrictPostalCodeToNumericOnly")) {
+            if (methodCall.hasArgument("restrictPostalCodeToNumericOnly") && methodCall.argument("restrictPostalCodeToNumericOnly") != null) {
                 restrictPostalCodeToNumericOnly = methodCall.argument("restrictPostalCodeToNumericOnly");
             }
 
-            boolean scanExpiry = true;
-            if (methodCall.hasArgument("scanExpiry")) {
+            boolean scanExpiry = false;
+            if (methodCall.hasArgument("scanExpiry") && methodCall.argument("scanExpiry") != null) {
                 scanExpiry = methodCall.argument("scanExpiry");
             }
 
             String scanInstructions = null;
-            if (methodCall.hasArgument("scanInstructions")) {
+            if (methodCall.hasArgument("scanInstructions") && methodCall.argument("scanInstructions") != null) {
                 scanInstructions = methodCall.argument("scanInstructions");
             }
 
             boolean suppressManualEntry = false;
-            if (methodCall.hasArgument("suppressManualEntry")) {
+            if (methodCall.hasArgument("suppressManualEntry") && methodCall.argument("suppressManualEntry") != null) {
                 suppressManualEntry = methodCall.argument("suppressManualEntry");
             }
 
             boolean suppressConfirmation = false;
-            if (methodCall.hasArgument("suppressConfirmation")) {
+            if (methodCall.hasArgument("suppressConfirmation") && methodCall.argument("suppressConfirmation") != null) {
                 suppressConfirmation = methodCall.argument("suppressConfirmation");
             }
 
             boolean useCardIOLogo = false;
-            if (methodCall.hasArgument("useCardIOLogo")) {
+            if (methodCall.hasArgument("useCardIOLogo") && methodCall.argument("useCardIOLogo") != null) {
                 useCardIOLogo = methodCall.argument("useCardIOLogo");
             }
 
             boolean hideCardIOLogo = false;
-            if (methodCall.hasArgument("hideCardIOLogo")) {
+            if (methodCall.hasArgument("hideCardIOLogo") && methodCall.argument("hideCardIOLogo") != null) {
                 hideCardIOLogo = methodCall.argument("hideCardIOLogo");
             }
 
-            boolean usePayPalActionbarIcon = true;
-            if (methodCall.hasArgument("usePayPalActionbarIcon")) {
+            boolean usePayPalActionbarIcon = false;
+            if (methodCall.hasArgument("usePayPalActionbarIcon") && methodCall.argument("usePayPalActionbarIcon") != null) {
                 usePayPalActionbarIcon = methodCall.argument("usePayPalActionbarIcon");
             }
 
             boolean keepApplicationTheme = false;
-            if (methodCall.hasArgument("keepApplicationTheme")) {
+            if (methodCall.hasArgument("keepApplicationTheme") && methodCall.argument("keepApplicationTheme") != null) {
                 keepApplicationTheme = methodCall.argument("keepApplicationTheme");
             }
 
@@ -155,29 +157,29 @@ public class CoreCardIoPlugin implements MethodCallHandler, ActivityResultListen
                 Map<String, Object> response = new HashMap<>();
                 response.put("cardholderName", scanResult.cardholderName);
                 response.put("cardNumber", scanResult.cardNumber);
-                String cardType = null;
+                String cardType = "unknown";
                 if (scanResult.getCardType() != CardType.UNKNOWN && scanResult.getCardType() != CardType.INSUFFICIENT_DIGITS) {
                     switch (scanResult.getCardType()) {
                         case AMEX:
-                            cardType = "Amex";
+                            cardType = "amex";
                             break;
                         case DINERSCLUB:
-                            cardType = "DinersClub";
+                            cardType = "dinersClub";
                             break;
                         case DISCOVER:
-                            cardType = "Discover";
+                            cardType = "discover";
                             break;
                         case JCB:
-                            cardType = "JCB";
+                            cardType = "jcb";
                             break;
                         case MASTERCARD:
-                            cardType = "MasterCard";
+                            cardType = "masterCard";
                             break;
                         case VISA:
-                            cardType = "Visa";
+                            cardType = "visa";
                             break;
                         case MAESTRO:
-                            cardType = "Maestro";
+                            cardType = "maestro";
                             break;
                         default:
                             break;

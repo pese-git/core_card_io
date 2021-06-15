@@ -1,45 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="core_card_io.dart" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/core_card_io.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
   </component>
-  <component name="ToolWindowManager">
-    <editor active="true" />
-    <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-    </layout>
+  <component name="ChangeListManager">
+    <list default="true" id="93f9ca71-c6cf-4ae1-bd30-9aa00e876b38" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/java/core/cardio/core_card_io/CoreCardIoPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/core/cardio/core_card_io/CoreCardIoPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core_card_io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/core_card_io.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/kotlin/core/cardio/core_card_io_example/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/kotlin/core/cardio/core_card_io_example/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/test/widget_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/CoreCardIoPlugin.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/CoreCardIoPlugin.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/core_card_io.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/ios/core_card_io.podspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core_card_io.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core_card_io.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/core_card_io_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/core_card_io_test.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <option name="show-excluded-files" value="false" />
-      </pane>
-    </panes>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1tywt3em4zVYOl0w65p8YDBOeSc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="dart.analysis.tool.window.force.activate" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="93f9ca71-c6cf-4ae1-bd30-9aa00e876b38" name="Default Changelist" comment="" />
+      <created>1623754848078</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623754848078</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2006" height="371" key="GridCell.Tab.0.bottom" timestamp="1623769537223">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state width="2006" height="371" key="GridCell.Tab.0.bottom/0.0.2048.1280@0.0.2048.1280" timestamp="1623769537223" />
+    <state width="2006" height="371" key="GridCell.Tab.0.center" timestamp="1623769537221">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state width="2006" height="371" key="GridCell.Tab.0.center/0.0.2048.1280@0.0.2048.1280" timestamp="1623769537221" />
+    <state width="2006" height="371" key="GridCell.Tab.0.left" timestamp="1623769537220">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state width="2006" height="371" key="GridCell.Tab.0.left/0.0.2048.1280@0.0.2048.1280" timestamp="1623769537220" />
+    <state width="2006" height="371" key="GridCell.Tab.0.right" timestamp="1623769537222">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state width="2006" height="371" key="GridCell.Tab.0.right/0.0.2048.1280@0.0.2048.1280" timestamp="1623769537222" />
+    <state x="533" y="276" key="SettingsEditor" timestamp="1623757057142">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state x="533" y="276" key="SettingsEditor/0.0.2048.1280@0.0.2048.1280" timestamp="1623757057142" />
+    <state x="725" y="395" width="597" height="490" key="find.popup" timestamp="1623760063761">
+      <screen x="0" y="0" width="2048" height="1280" />
+    </state>
+    <state x="725" y="395" width="597" height="490" key="find.popup/0.0.2048.1280@0.0.2048.1280" timestamp="1623760063761" />
   </component>
 </project>
