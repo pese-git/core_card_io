@@ -1,3 +1,4 @@
-## 0.0.1
+## 2.0.0
 
-* TODO: Describe initial release.
+* Migrate to null safety
+* Change name to core_card_io_beta

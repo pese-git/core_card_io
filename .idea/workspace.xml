@@ -6,24 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="93f9ca71-c6cf-4ae1-bd30-9aa00e876b38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/core/cardio/core_card_io/CoreCardIoPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/core/cardio/core_card_io_beta/CoreCardIoPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/Flutter.podspec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/CoreCardIoPlugin.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/CoreCardIoPlugin.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftCoreCardIoPlugin.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/core_card_io.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/ios/core_card_io_beta.podspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core_card_io.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core_card_io_beta.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/core_card_io.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/core_card_io_beta.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core_card_io_beta.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/core_card_io_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/core_card_io_beta_test.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,22 +42,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2006" height="371" key="GridCell.Tab.0.bottom" timestamp="1623772325074">
+    <state width="2006" height="371" key="GridCell.Tab.0.bottom" timestamp="1623773852759">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
-    <state width="2006" height="371" key="GridCell.Tab.0.bottom/0.0.2048.1280@0.0.2048.1280" timestamp="1623772325074" />
-    <state width="2006" height="371" key="GridCell.Tab.0.center" timestamp="1623772325073">
+    <state width="2006" height="371" key="GridCell.Tab.0.bottom/0.0.2048.1280@0.0.2048.1280" timestamp="1623773852759" />
+    <state width="2006" height="371" key="GridCell.Tab.0.center" timestamp="1623773852757">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
-    <state width="2006" height="371" key="GridCell.Tab.0.center/0.0.2048.1280@0.0.2048.1280" timestamp="1623772325073" />
-    <state width="2006" height="371" key="GridCell.Tab.0.left" timestamp="1623772325072">
+    <state width="2006" height="371" key="GridCell.Tab.0.center/0.0.2048.1280@0.0.2048.1280" timestamp="1623773852757" />
+    <state width="2006" height="371" key="GridCell.Tab.0.left" timestamp="1623773852756">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
-    <state width="2006" height="371" key="GridCell.Tab.0.left/0.0.2048.1280@0.0.2048.1280" timestamp="1623772325072" />
-    <state width="2006" height="371" key="GridCell.Tab.0.right" timestamp="1623772325073">
+    <state width="2006" height="371" key="GridCell.Tab.0.left/0.0.2048.1280@0.0.2048.1280" timestamp="1623773852756" />
+    <state width="2006" height="371" key="GridCell.Tab.0.right" timestamp="1623773852758">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>
-    <state width="2006" height="371" key="GridCell.Tab.0.right/0.0.2048.1280@0.0.2048.1280" timestamp="1623772325073" />
+    <state width="2006" height="371" key="GridCell.Tab.0.right/0.0.2048.1280@0.0.2048.1280" timestamp="1623773852758" />
     <state x="533" y="276" key="SettingsEditor" timestamp="1623757057142">
       <screen x="0" y="0" width="2048" height="1280" />
     </state>

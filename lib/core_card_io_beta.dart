@@ -14,7 +14,7 @@ part 'core_card_io_beta.g.dart';
 class CoreCardIo {
   static const MethodChannel _channel = const MethodChannel('core_card_io_beta');
 
-  static Future<dynamic> scanCard({
+  static Future<CoreCardIoResponse?> scanCard({
     bool? requireExpiry,
     bool? scanExpiry,
     bool? requireCVV,
