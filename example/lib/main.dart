@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:core_card_io/core_card_io.dart';
+import 'package:core_card_io_beta/core_card_io_beta.dart';
 
 void main() => runApp(MyApp());
 

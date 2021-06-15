@@ -17,7 +17,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  core_card_io:
+  core_card_io_beta:
     path: ../
 
 # For information on the generic Dart part of this file, see the

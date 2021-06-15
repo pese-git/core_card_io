@@ -1,4 +1,4 @@
-name: core_card_io
+name: core_card_io_beta
 description: CardIO plugin for flutter.
 version: 2.0.0
 author: Harry Bui <harrybui2804@gmail.com>, Nikita Kozlov <nick@nk2.eu>
@@ -32,8 +32,12 @@ flutter:
   # be modified. They are used by the tooling to maintain consistency when
   # adding or updating assets for this project.
   plugin:
-    androidPackage: core.cardio.core_card_io
-    pluginClass: CoreCardIoPlugin
+    platforms:
+      android:
+        package: core.cardio.core_card_io_beta
+        pluginClass: CoreCardIoPlugin
+      ios:
+        pluginClass: CoreCardIoPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

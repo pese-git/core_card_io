@@ -1,8 +1,10 @@
-package core.cardio.core_card_io;
+package core.cardio.core_card_io_beta;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.util.Log;
+
+import androidx.annotation.NonNull;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -12,33 +14,57 @@ import java.util.Map;
 import io.card.payment.CardIOActivity;
 import io.card.payment.CardType;
 import io.card.payment.CreditCard;
+import io.flutter.embedding.engine.plugins.FlutterPlugin;
+import io.flutter.embedding.engine.plugins.activity.ActivityAware;
+import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
 import io.flutter.plugin.common.MethodChannel.Result;
-import io.flutter.plugin.common.PluginRegistry;
 import io.flutter.plugin.common.PluginRegistry.ActivityResultListener;
-import io.flutter.plugin.common.PluginRegistry.Registrar;
 
-public class CoreCardIoPlugin implements MethodCallHandler, ActivityResultListener {
+public class CoreCardIoPlugin implements FlutterPlugin, MethodCallHandler, ActivityAware, ActivityResultListener {
     private static final int MY_SCAN_REQUEST_CODE = 100;
 
-    private final PluginRegistry.Registrar registrar;
     private Result pendingResult;
     private MethodCall methodCall;
+    private MethodChannel channel;
 
-    /**
-     * Plugin registration.
-     */
-    public static void registerWith(Registrar registrar) {
-        final MethodChannel channel = new MethodChannel(registrar.messenger(), "core_card_io");
-        CoreCardIoPlugin instance = new CoreCardIoPlugin(registrar);
-        registrar.addActivityResultListener(instance);
-        channel.setMethodCallHandler(instance);
+    private ActivityPluginBinding activityBinding;
+
+    @Override
+    public void onAttachedToEngine(@NonNull FlutterPluginBinding binding) {
+        channel = new MethodChannel(binding.getBinaryMessenger(), "core_card_io_beta");
+        channel.setMethodCallHandler(this);
     }
 
-    private CoreCardIoPlugin(PluginRegistry.Registrar registrar) {
-        this.registrar = registrar;
+    @Override
+    public void onDetachedFromEngine(@NonNull FlutterPluginBinding binding) {
+        channel.setMethodCallHandler(null);
+    }
+
+    @Override
+    public void onAttachedToActivity(@NonNull ActivityPluginBinding binding) {
+        activityBinding = binding;
+        activityBinding.addActivityResultListener(this);
+    }
+
+    @Override
+    public void onDetachedFromActivityForConfigChanges() {
+        activityBinding.removeActivityResultListener(this);
+        activityBinding = null;
+    }
+
+    @Override
+    public void onReattachedToActivityForConfigChanges(@NonNull ActivityPluginBinding binding) {
+        activityBinding = binding;
+        activityBinding.addActivityResultListener(this);
+    }
+
+    @Override
+    public void onDetachedFromActivity() {
+        activityBinding.removeActivityResultListener(this);
+        activityBinding = null;
     }
 
     @Override
@@ -48,11 +74,7 @@ public class CoreCardIoPlugin implements MethodCallHandler, ActivityResultListen
             return;
         }
 
-        Activity activity = registrar.activity();
-        if (activity == null) {
-            result.error("no_activity", "core_card_io plugin requires a foreground activity.", null);
-            return;
-        }
+        Activity activity = activityBinding.getActivity();
 
         pendingResult = result;
         methodCall = call;

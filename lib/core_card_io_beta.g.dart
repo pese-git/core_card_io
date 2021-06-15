@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'core_card_io.dart';
+part of 'core_card_io_beta.dart';
 
 // **************************************************************************
 // DataClassGenerator

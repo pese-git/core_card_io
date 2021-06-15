@@ -1,4 +1,4 @@
-group 'core.cardio.core_card_io'
+group 'core.cardio.core_card_io_beta'
 version '1.0-SNAPSHOT'
 
 buildscript {

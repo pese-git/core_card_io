@@ -13,7 +13,7 @@
 
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
     FlutterMethodChannel *channel = [FlutterMethodChannel
-                                     methodChannelWithName:@"core_card_io"
+                                     methodChannelWithName:@"core_card_io_beta"
                                      binaryMessenger:[registrar messenger]];
     UIViewController *viewController = [UIApplication sharedApplication].delegate.window.rootViewController;
     CoreCardIoPlugin *instance = [[CoreCardIoPlugin alloc] initWithViewController:viewController];

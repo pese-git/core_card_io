@@ -1,12 +1,12 @@
 PODS:
   - CardIO (5.4.1)
-  - core_card_io (2.0.0):
+  - core_card_io_beta (2.0.0):
     - CardIO
     - Flutter
   - Flutter (1.0.0)
 
 DEPENDENCIES:
-  - core_card_io (from `.symlinks/plugins/core_card_io/ios`)
+  - core_card_io_beta (from `.symlinks/plugins/core_card_io_beta/ios`)
   - Flutter (from `Flutter`)
 
 SPEC REPOS:
@@ -14,14 +14,14 @@ SPEC REPOS:
     - CardIO
 
 EXTERNAL SOURCES:
-  core_card_io:
-    :path: ".symlinks/plugins/core_card_io/ios"
+  core_card_io_beta:
+    :path: ".symlinks/plugins/core_card_io_beta/ios"
   Flutter:
     :path: Flutter
 
 SPEC CHECKSUMS:
   CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
-  core_card_io: 84374729b901f51ad8b170f49a0e670f928e8b37
+  core_card_io_beta: 2914d4cf3a529417a5b4dbfd29714c4315a114ba
   Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
 
 PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c

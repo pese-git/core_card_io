@@ -1,3 +1,6 @@
+
+library core_card_io_beta;
+
 import 'dart:async';
 import 'dart:convert';
 
@@ -6,11 +9,10 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:json_annotation/json_annotation.dart';
 
-part 'core_card_io.g.dart';
+part 'core_card_io_beta.g.dart';
 
 class CoreCardIo {
-  static const MethodChannel _channel =
-      const MethodChannel('core_card_io');
+  static const MethodChannel _channel = const MethodChannel('core_card_io_beta');
 
   static Future<dynamic> scanCard({
     bool? requireExpiry,
