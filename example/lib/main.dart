@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:flutter/services.dart';
 import 'package:core_card_io_beta/core_card_io_beta.dart';
 
 void main() => runApp(MyApp());
@@ -12,7 +11,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
   CoreCardIoResponse? card;
 
   @override
@@ -24,11 +22,10 @@ class _MyAppState extends State<MyApp> {
     if (!mounted) return;
 
     final card = await CoreCardIo.scanCard(
-      hideCardIOLogo: true,
-      requireExpiry: true,
-      scanExpiry: true,
-      suppressManualEntry: true
-    );
+        hideCardIOLogo: true,
+        requireExpiry: true,
+        scanExpiry: true,
+        suppressManualEntry: true);
 
     setState(() => this.card = card);
   }
@@ -45,7 +42,9 @@ class _MyAppState extends State<MyApp> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text('Scanned card: ${card ?? 'none'}'),
-              Container(height: 8.0,),
+              Container(
+                height: 8.0,
+              ),
               OutlinedButton(onPressed: scanCard, child: Text("Scan card"))
             ],
           ),

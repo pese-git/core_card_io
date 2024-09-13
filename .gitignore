@@ -6,3 +6,6 @@
 
 build/
 example/.flutter-plugins-dependencies
+
+# FVM Version Cache
+.fvm/
