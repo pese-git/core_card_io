@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core_card_io_beta.iml" filepath="$PROJECT_DIR$/.idea/modules/core_card_io_beta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core_card_io_beta.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/core_card_io_beta.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core_card_io_beta.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core_card_io_beta.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core_card_io_beta.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/core_card_io_beta.unitTest.iml" />
+    </modules>
+  </component>
+</project>
